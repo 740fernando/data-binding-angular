@@ -18,4 +18,12 @@ export class DataBindingComponent implements OnInit {
     return 2022-anoNascimento;
   }
 
+  clicou() {
+    this.name = 'Fernando Luiz'
+    console.log('clicou aqui');
+  }
+
+  recebendoArgumento(value: any) {
+    console.log('Argumento : ',value);
+  }
 }
