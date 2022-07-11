@@ -1,0 +1,35 @@
+<div class="card w-100 my-5">
+    <div class="card-body">
+        <h1 class="card-title text-center">Lista de cursos</h1>
+        <button class="btn btn-success mb-4 float-end" routerLink="/form">
+            Cadastrar novo
+        </button>
+        <table class="table">
+            <thead>
+                <tr>
+                   <th>id</th>
+                   <th>Curso</th>
+                   <th>Duracao</th>
+                   <th>Inicio</th>
+                   <th>Fim</th>
+                   <th colspan="2"></th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of courses">
+                    <td>{{c.id}}</td>
+                    <td>{{c.curso}}</td>
+                    <td>{{c.duracao}}</td>
+                    <td>{{c.inicio}}</td>
+                    <td>{{c.fim}}</td>
+                    <td>
+                        <button class="btn btn-primary"  routerLink="/form/{{c.id}}">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" (click)="deleteCourse(c.id)"  >Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
