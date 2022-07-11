@@ -7,6 +7,13 @@
         <p class="row my-4">exemplo de properties binding</p>
         <img [src]="imgUrl" [alt]="imgDesc">
     </div>
+    <div>
+        <br>
+        <button (click)="clicou()">Clique</button>
+        <br>
+        <input #input (keyup)="recebendoArgumento(input.value)">
+        {{input.value}}
+    </div>
 </section>
 
 
