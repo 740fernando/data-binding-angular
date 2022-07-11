@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
   name = 'Fernando';
   imgUrl = 'https://picsum.photos/id/237/200/300';
-  imgDesc = 'Tá um cachorro velho hein'
+  imgDesc = 'Tá um cachorro velho hein';
+  buttonText = 'Clique aqui';
+  isRed = false;
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +23,7 @@ export class DataBindingComponent implements OnInit {
   clicou() {
     this.name = 'Fernando Luiz'
     console.log('clicou aqui');
+    this.isRed = true;
   }
 
   recebendoArgumento(value: any) {
