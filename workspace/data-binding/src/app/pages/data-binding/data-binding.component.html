@@ -35,7 +35,7 @@
     </div>
 </section>
 <h1>
-    Transferindo dados entre componentes - Parte 1
+    Transferindo dados entre componentes - Parte 1 - Pai p/ o filho
     <section class="column"></section>
     <app-button [btnText]="'cancelar'" [btnType]="'btn-danger'"></app-button>
     <br>
@@ -44,5 +44,10 @@
     <app-button [btnText]="'Clique Aqui'" [btnType]="'btn-primary'"></app-button>
     <br>
     <app-button [btnText]="'test'" [btnType]="'btn-default'"></app-button>
+</h1>
+<h1>
+    Transferindo dados entre componentes - Parte 2 - Filho p/ o pai
+    <section class="column"></section>
+    <app-button [btnText]="'cancelar'" [btnType]="'btn-danger'" (clickChildren)="clicouNoFilho($event)"></app-button>
 </h1>
 
