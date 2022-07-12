@@ -8,8 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import {CourseListComponent } from './pages/course/course-list/course-list.component';
 import { CourseFormComponent } from './pages/course/course-form/course-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DataBindingComponent } from './pages/course/data-binding/data-binding.component';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
+
 
 @NgModule({
   declarations: [

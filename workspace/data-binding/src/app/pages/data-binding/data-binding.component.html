@@ -28,6 +28,21 @@
         <br>
         <h1 [class.text-red]="isRed">Binding de classes</h1>
     </div>
+    <div>
+        <h3>Como funciona o Two-Way Data Biding</h3>
+        <input type="text" class="form-control" [(ngModel)]="textInput">
+        <p class="text-default">{{textInput}}</p>
+    </div>
 </section>
-
+<h1>
+    Transferindo dados entre componentes - Parte 1
+    <section class="column"></section>
+    <app-button [btnText]="'cancelar'" [btnType]="'btn-danger'"></app-button>
+    <br>
+    <app-button [btnText]="'Salvar'" [btnType]="'btn-success'"></app-button>
+    <br>
+    <app-button [btnText]="'Clique Aqui'" [btnType]="'btn-primary'"></app-button>
+    <br>
+    <app-button [btnText]="'test'" [btnType]="'btn-default'"></app-button>
+</h1>
 

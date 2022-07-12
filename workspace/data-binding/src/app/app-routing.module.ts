@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CourseFormComponent } from './pages/course/course-form/course-form.component';
 import { CourseListComponent } from './pages/course/course-list/course-list.component';
-import { DataBindingComponent } from './pages/course/data-binding/data-binding.component';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 
 
 const routes: Routes = [
