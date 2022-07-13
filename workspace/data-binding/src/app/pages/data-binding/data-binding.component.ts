@@ -15,6 +15,8 @@ export class DataBindingComponent implements OnInit {
   fontSize= '50px';
   widthImg = 50;
   textInput = '';
+  number=  0;
+  destroy = false;
   constructor() { }
 
   ngOnInit() {
@@ -36,5 +38,13 @@ export class DataBindingComponent implements OnInit {
 
   recebendoArgumento(value: any) {
     console.log('Argumento : ',value);
+  }
+
+  incrementa(){
+    this.number++
+  }
+
+  destroiComponente(){
+    this.destroy = true;
   }
 }

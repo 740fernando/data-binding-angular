@@ -9,37 +9,41 @@ export class LifeCycleComponent implements OnInit, OnChanges,
  DoCheck, AfterContentInit,AfterContentChecked, AfterViewChecked, OnDestroy 
  {
 
-  @Input() number = 10 ;
+  @Input() number = 10;
 
   constructor() {
     console.log('chamou o construtor');
-   }
+  }
+
+  ngOnChanges(): void {
+    console.log('chamou o on changes');
+  }
 
   ngOnInit(): void {
     console.log('chamou o on Init');
   }
- 
-  ngAfterViewChecked(): void {
-    console.log('chamou o ngAfterViewChecked');
+
+  ngDoCheck(): void {
+    console.log('chamou o Do Check');
   }
 
   ngAfterContentInit(): void {
-    console.log('chamou o ngAfterContentInit');
+    console.log('chamou o After Conttent Init');
   }
 
   ngAfterContentChecked(): void {
-    console.log('chamou o ngAfterContentChecked');
+    console.log('chamou o After Content Checked');
   }
 
-  ngDoCheck(): void {
-    console.log('chamou o ngDoCheck');
+  ngAfterViewInit(): void {
+    console.log('chamou o After View Init');
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('chamou o ngOnChanges');
+  ngAfterViewChecked(): void {
+    console.log('chamou o After View Checked');
   }
 
   ngOnDestroy(): void {
-    console.log('chamou o ngOnDestroy');
+    console.log('chamou o On Destroy');
   }
 }

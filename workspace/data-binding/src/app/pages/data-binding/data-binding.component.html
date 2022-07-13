@@ -51,3 +51,9 @@
     <app-button [btnText]="'cancelar'" [btnType]="'btn-danger'" (clickChildren)="clicouNoFilho($event)"></app-button>
 </h1>
 
+<h1>
+    O ciclo de vida do Angular
+</h1>
+<app-life-cycle [number]="number" ></app-life-cycle>
+<app-button [btnText]="'Clique Aqui'" [btnType]="'btn-primary'" (clickChildren)="incrementa()"></app-button>
+<app-button [btnText]="'Clique Aqui'" [btnType]="'btn-danger'" (click)="destroiComponente()"></app-button>
