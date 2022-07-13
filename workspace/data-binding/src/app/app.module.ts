@@ -10,6 +10,7 @@ import { CourseFormComponent } from './pages/course/course-form/course-form.comp
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ButtonComponent } from './components/button/button.component';
     CourseListComponent,
     CourseFormComponent,
     DataBindingComponent,
-    ButtonComponent
+    ButtonComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
